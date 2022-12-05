@@ -1,0 +1,14 @@
+# Global
+spring:
+  main.lazy-initialization: true
+
+---
+# Development
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/test?retryWrites=true&w=majority
+      database: test
+      username: root
+      password: root
+      authentication-database: admin
